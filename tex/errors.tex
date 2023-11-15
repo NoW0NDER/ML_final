@@ -1,0 +1,31 @@
+\documentclass{article}
+
+\usepackage{multirow}
+\usepackage{booktabs}
+
+\begin{document}
+
+\begin{table}[htbp]
+  \centering
+
+    \begin{tabular}{ccc}
+    \toprule
+    Model & Index & Result \\
+    \midrule
+    \multirow{3}{*}{Base} & MSE & 0.784948\\
+        & MAE & 0.630628\\
+        & R2  & -0.177297\\
+    \addlinespace
+    \multirow{3}{*}{Vader} & MSE & 0.737087\\
+        & MAE & 0.589182\\
+        & R2  & -0.105514\\
+    \addlinespace
+    \multirow{3}{*}{FinBERT} & MSE & 0.484642\\
+        & MAE & 0.511147\\
+        & R2  & 0.273113\\
+    \bottomrule
+    \end{tabular}%
+  \label{tab:addlabel}%
+\end{table}%
+
+\end{document}
